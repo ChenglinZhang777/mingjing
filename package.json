@@ -1,0 +1,11 @@
+{
+  "name": "mingjing",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @mingjing/backend dev\" \"pnpm --filter @mingjing/frontend dev\"",
+    "build": "pnpm --filter @mingjing/backend build && pnpm --filter @mingjing/frontend build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
